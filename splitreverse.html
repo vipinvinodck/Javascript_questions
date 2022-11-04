@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=prompt("ENTER THE WORDS")
+        var b=a.split(' ')
+        var Blen= b.length
+        var s=""
+        for(i=0;i<Blen;i++){
+            var bl= b[i].length;
+            for(j=bl-1;j>=0;j--){
+                var c=b[i][j];
+                s=s+c;  
+            }
+            s=s+" "   
+        }
+        document.write(s)
+    </script>
+</body>
+</html>
